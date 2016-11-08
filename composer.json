@@ -1,0 +1,13 @@
+{
+    "name": "weerd/example-package",
+    "description": "PHP Composer package starter example with some common default files and directories.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego Lorenzo",
+            "email": "diego@diegolorenzo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
