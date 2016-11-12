@@ -1,13 +1,32 @@
 {
-    "name": "weerd/example-package",
-    "description": "PHP Composer package starter example with some common default files and directories.",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Diego Lorenzo",
-            "email": "diego@diegolorenzo.com"
-        }
+  "name": "weerd/example-package",
+  "description": "PHP Composer package starter example with some common default files and directories.",
+  "keywords": ["example", "keyword"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Diego Lorenzo",
+      "email": "diego@diegolorenzo.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Weerd\\ExamplePackage\\": "src/"
+    }
+  },
+  "require": {},
+  "autoload-dev": {
+    "classmap": [
+      "tests/TestCase.php"
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "psr-4": {
+      "Weerd\\ExamplePackageTests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.6",
+    "illuminate/database": "^5.3",
+    "symfony/var-dumper": "^3.1"
+  }
 }
