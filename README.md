@@ -18,7 +18,7 @@ If initially using the package locally, required by another local package make s
 Additionally, if initially using the package locally, add the following to the other project's **composer.json**:
 
 ```javascript
- "repositories": [
+"repositories": [
     {
         "type": "vcs",
         "url": "../path/to/example-package"
