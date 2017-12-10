@@ -16,26 +16,6 @@ You will need to update the following items with your package's name and info:
 
 
 
-## Local Usage
+## Extras
 
-If initially using the package locally and it is being required by another local package or project, depending on your setup, you may need to make sure this package has been initialized as a git repository and make an initial commit, otherwise composer will not be able to install the package as a local vendor package.
-
-Additionally, if initially using the package locally, add the following to the other project's **composer.json**:
-
-```javascript
-"repositories": [
-    {
-        "type": "vcs",
-        "url": "../path/to/example-package"
-    }
-],
-"require": {
-    "weerd/example-package": "dev-master"
-}
-```
-
-
-
-## Tips
-
-_The `illuminate/database` package is required for development testing, however if this package is intended to be a Laravel package and/or a package that needs database transactions, feel free to move `illuminate/database` from `require-dev` to `require`._
+_The `illuminate/database` package is required for development testing, however if this package is intended to be a Laravel specific package and/or a package that needs database transactions, feel free to move `illuminate/database` from `require-dev` to `require`._
